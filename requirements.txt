@@ -1,1 +1,7 @@
 streamlit
+pandas
+gspread
+oauth2client
+reportlab
+requests
+Pillow
