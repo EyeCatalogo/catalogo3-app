@@ -25,7 +25,7 @@ def cargar_datos(credenciales):
         creds = ServiceAccountCredentials.from_json_keyfile_name(temp_path, scope)
         client = gspread.authorize(creds)
 
-        sheet = client.open("Productos").sheet1
+        sheet = client.open("Catalogo").sheet1
         data = sheet.get_all_records()
 
         return pd.DataFrame(data)
